@@ -46,5 +46,5 @@ enlace = "https://www1.newpct.net"+descarga[0].replace(' ', '%20')
 # MANDAMOS EL ENLACE DEL TORRENT AL GESTOR DE DESCARGAS DE NUESTRO SERVER
 torrent_url = enlace
 c = Client(host='192.168.1.69', port=9091, username='transmission',
-           password='{6b45855dad4d0cf61a684b247b87a19b476ec6c02tUwZ8rs')  # CAMBIAR LA CONTRASEÑA EN PLANO, ESTA FEO XD
+           password='{6b45855dad4d0cf61a684b247b87a19b476ec6c02tUwZ8rs')  # CAMBIAR LA CONTRASEÑA, EN PLANO ESTA FEO XD
 c.add_torrent(torrent_url)

@@ -5,7 +5,7 @@ para la reproducción de peliculas, para añadir estas tendremos un Script de py
 en el cual solo tendremos que introducir el nombre de la película que estemos buscando y seleccionar la que más nos convenga. 
 
 El Script se encargará de mandar el torrent al servidor para que empiece la descarga de forma automática.
-
+Vamos a usar la web: https://www1.newpct.net/
 
 
 
