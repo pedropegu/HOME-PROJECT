@@ -139,7 +139,7 @@ pip3 install requests
 pip3 install beautifulsoup4
 ```
 
-Sobre el script, no hace falta tenerlo en el servidor, se puede ejecutar desde otro dispositivo si este esta registrado en settings.json > "rpc-whitelist" de la configuración de Transmision.
+Sobre el script, no hace falta tenerlo en el servidor, haremos uso de trasmission_rpc y de la identificacón mediante usuario y contraseña
 
 ```python3
 
