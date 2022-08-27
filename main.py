@@ -16,7 +16,7 @@ def ConnectTransmission(torrent_url, rpc_password=rpc_password):
                    password=rpc_password)
         c.add_torrent(torrent_url)
     except:
-        print("Error al conectar con el servidor.")
+        print("ERROR: Error al conectar con el servidor.")
 
 
 def GetTorrent(enlace):
@@ -80,7 +80,7 @@ def GetVideo_Spanish():
         return GetTorrent(enlace)
 
     except request_spanish.status_code == 404:
-        print("El servidor no pudo encontrar el contenido solicitado.")
+        print("ERROR: El servidor no pudo encontrar el contenido solicitado.")
 
 
 def GetVideo(request):
@@ -107,7 +107,7 @@ def GetVideo(request):
         return GetTorrent(enlace)
 
     except request.status_code == 404:
-        print("El servidor no pudo encontrar el contenido solicitado. Este código de respuesta es uno de los más famosos dada su alta ocurrencia en la web.")
+        print("ERROR: El servidor no pudo encontrar el contenido solicitado.")
 
 
 option = input(
