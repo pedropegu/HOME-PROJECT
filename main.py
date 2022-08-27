@@ -8,13 +8,17 @@ from transmission_rpc import Client
 import os
 
 rpc_password = os.environ['NEWPCT']
+servidor = "192.168.1.69"
 
 
 def ConnectTransmission(torrent_url, rpc_password=rpc_password):
     try:
-        c = Client(host='192.168.1.69', port=9091, username='transmission',
+        c = Client(host=servidor, port=9091, username='transmission',
                    password=rpc_password)
         c.add_torrent(torrent_url)
+
+        print(
+            f"\nTorrent añadido correctamente, para ver la descarga visita: http://{servidor}:9091")
     except:
         print("ERROR: Error al conectar con el servidor.")
 
