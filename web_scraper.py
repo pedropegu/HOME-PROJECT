@@ -1,5 +1,4 @@
 
-from shutil import ExecError
 from time import sleep
 from tqdm import trange
 from bs4 import BeautifulSoup
@@ -75,7 +74,6 @@ def GetVideo_Spanish_or_1080p(option):
         return GetTorrent(enlace)
     except Exception as Error:
         print(Error.message)
-    
 
 def GetVideo(request):
     try:
@@ -103,7 +101,6 @@ def GetVideo(request):
 
     except Exception as Error:
         print(Error.message)
-
 #DONTORRENT - LIMPIO
 def DonTorrent_Search(request):
     try:
