@@ -12,10 +12,10 @@ def main():
                 GetVideo(r_busqueda)
                 break
             elif newpct == "2":
-                GetVideo_Spanish()
+                GetVideo_Spanish_or_1080p("spanish")
                 break
             elif newpct == "3":
-                GetVideo_1080()
+                GetVideo_Spanish_or_1080p("1080p")
                 break
             else:
                 print("Valor incorrecto")
